@@ -1,0 +1,444 @@
+html{
+	font-size: 15px;
+}
+.bienvenidos{
+	background: url("../images/perro-fondo2.jpg") no-repeat center top;
+	color: white;
+	background-size: cover;
+	background-attachment: fixed !important;
+	height: 100vh;
+	display: flex;
+	flex-direction:column;
+}
+header{
+	background: #365509;
+	color: #FFFFFF;
+	padding: .5rem 0;
+	transition: all .5s ease;
+}
+.encabezado.fondo-menu{
+	background: #3D5237;
+	padding: 1rem 0;
+}
+ .encabezado .container{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.encabezado .logo img{
+	width: 150px;
+	height: 60px;
+}
+/**Boton Menu****/
+.boton-menu{
+	border:0;
+	font-size: 2rem;
+	margin: 0;
+	padding: 0 .5rem;
+	background: transparent;
+	color: #FFFFFF;
+	margin-left: auto;
+}
+.boton-menu:focus{
+	outline: 0;
+}
+#menu-principal{
+	flex:1 1 100%;
+}
+#menu-principal ul {
+	padding: 0;
+	list-style: none;
+	margin: 1rem 0 0 ;
+}
+#menu-principal ul a{
+	display: block;
+	padding: .5rem 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 1px solid white;
+	color: white;
+	text-decoration: none;
+}
+#menu-principal ul a:hover,#menu-principal ul li.active a{
+	color: #E74545;
+}
+/**Adopta**/
+.btn-primary {
+    color: #fff;
+    background-color:#244D1D;
+    border-color: transparent;
+    margin-top: 1rem;
+}
+/***/
+.texto-encabezado{
+	flex:1 1 auto;
+	display: flex;
+	align-items:center;
+}
+
+.texto-encabezado .display-3{
+	margin-top: 5rem;
+}
+.btn-primary:hover{
+    color: white;
+    border-color: transparent;
+    background: #912F2F;
+}
+/*flecha*/
+.flecha-bajar a {
+	display: inline-block;
+	color: white;
+	font-size: 3rem;
+	animation:fl-animada 2s ease-in-out infinite;
+}
+@keyframes fl-animada{
+	from{
+		transform:translateY(0);
+	}
+	50%{
+		transform:translateY(6px);
+	}
+	to{
+		transform:translateY(0);
+	}
+} 
+/****************************
+		Escritorio
+*****************************/
+
+@media (min-width: 768px){
+	#menu-principal{
+		height: auto !important;
+		display: block;
+		flex:0 1 auto;
+	}
+	#menu-principal ul{
+		display: flex;
+		margin:0 0 0 0;
+	}
+	#menu-principal ul li a {
+		padding: .6rem;
+		margin: 0 .2rem;
+		border-top: 0px;
+		transition:all .5s ease;
+	}
+	#menu-principal ul li.active a ,#menu-principal ul li a:hover{
+		color:#E74545;
+		border-bottom: 3.5px solid;
+	}
+	.bienvenidos .encabezado .container{
+		display: flex;
+	}
+	.bienvenidos .encabezado .container a{
+		flex:1 1 auto;
+	}
+	.inicio-sesion{
+		position: absolute;
+		right: 5rem;
+	}
+}
+/************************
+	Realidad Perros
+************************/
+.realidad-perros .container .row #imagenperruno{
+	text-align: center;
+}
+.realidad-perros .container .row #imagenperruno img{
+	width: 290px;
+	height: 200px;
+}
+.realidad-perros{
+	background: #B57E39;
+	color: white;
+}
+@media (min-width: 768px){
+	.realidad-perros .container .row #imagenperruno img{
+		width: 200px;
+		height: 250px;
+		padding-top: 40px;
+	}
+}
+@media (min-width: 792px){
+	.realidad-perros .container .row #imagenperruno img{
+		width: 280px;
+		height: 250px;
+		padding-top: 40px;
+	}
+}
+.mejor-eleccion .row ul li img{
+	width: 90px;
+	height: 90px;
+}
+.mejor-eleccion figure img{
+	width: 350px;
+	height: 320px;
+	padding-top: 20px;
+}
+.mejor-eleccion ul{
+	list-style: none;
+}
+
+@media (min-width: 992px){
+	
+	.mejor-eleccion li{
+		display: flex;
+	}
+	.mejor-eleccion ul li img{
+		margin-right: 1rem;
+	}
+	.mejor-eleccion #columna1 li img{
+		order:1;
+	}
+	.mejor-eleccion ul li h4{
+		font-size: 1rem;
+		font-weight: bold
+	}
+	.mejor-eleccion figure img{
+		width: 290px;
+	}
+	.mejor-eleccion ul li:hover img{
+	transform: rotatey(360deg);
+	transform-style: preserve-3d;
+	transition:all 1s ease;
+}
+
+
+}
+@media (min-width: 1200px){
+	.mejor-eleccion figure img{
+		width: 350px;
+	}
+}
+.pie-pagina{
+	background: #18350F;
+	color: white;
+	text-align: center;
+}
+/******************************
+		Pie de Pagina
+********************************/
+footer {
+	background: #3C652F;
+	color: white;
+}
+footer .row h5{
+	padding: 1rem;
+	border-bottom: 0.5px solid white;
+	padding-left: 0;
+}
+footer .row ul li{
+	list-style: none;
+	text-align: left;
+}
+footer .row ul{
+	padding:0;
+}
+#legales ul li{
+	padding: 1rem;
+	padding-left: 0;
+	border-bottom: 0.5px solid white;
+}
+#legales ul li a {
+	text-decoration: none;
+	color: white;
+}
+#contacto ul li img{
+	height: 3rem;
+	width: 3rem;
+}
+footer .row #contacto .telefono-correo li img{
+	margin-right: 1rem;
+	margin-bottom: .5rem;
+} 
+footer .row #contacto .sociales{
+	display: flex;
+	justify-content:space-around;
+}
+footer .row #legales ul li i {
+	margin-right: 1rem;
+}
+#piepagina{
+	background: #0D0D0D;
+	padding: 2rem;
+	color: white;
+}
+.flecha-arriba{
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	color: #484141;
+	text-decoration: none;
+	z-index: 99999;
+	transition: all .5s ease;
+}
+.flecha-arriba:hover,.flecha-arriba:focus{
+	outline: none;
+	text-decoration: none;
+	color: white;
+}
+
+/***********************
+	Inicio Sesion
+************************/
+.bienvenidos .encabezado .inicio-sesion .bloque-sesion{
+	color: white;
+	background: #426F2A;
+	border-radius:0 0 5px 5px;
+}
+.inicio-sesion .bloque-sesion .auxiliar p a {
+	text-decoration: none;
+	color: white;
+	font-size: 0.7rem;
+}
+.inicio-sesion .bloque-sesion .auxiliar p{
+	background: #77AB48;
+	padding: .5rem;
+	margin: 0;
+}
+.inicio-sesion .bloque-sesion .auxiliar .bordea{
+	border-bottom: 1px solid white;
+}
+.bienvenidos .auxiliar i{
+	margin-right: 1rem;
+}
+.inicio-sesion input[type="text"],.inicio-sesion input[type="password"]{
+	border-radius: 5px;
+}
+
+/**********************************
+			REGISTRARSE
+***********************************/
+.ruta {
+	background: #44AB5A;
+	padding:.6rem;
+	color: white;
+}
+.ruta a {
+	list-style:none;
+	color: white;
+	text-decoration: none;
+}
+.ruta a ,.ruta i{
+	margin: 1rem;
+}
+.ruta a:hover{
+	color: black;
+}
+.pagina-interna .bienvenidos{
+	height: 50vh;
+}
+
+/*******************************
+	Boton Chueco - textos 
+*********************************/
+
+main #sexo{
+	position: absolute;
+    width: 8rem;
+    height: 2.7rem;
+    right: 1rem;
+}
+@media (max-width: 768px){
+	main #password, main #direccion{
+		margin-bottom: 1rem;
+	}
+	main #sexo{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem
+	}
+	main label[for="sexo"]{
+		margin-top: 1rem;
+    	margin-bottom: 0;
+	}
+	main #registro{
+		margin-top: 2rem;
+	}
+}
+/*********************************
+		ADOPTA-PERROS
+*********************************/
+
+#adopta-perruno h4{
+	text-align: center;
+	margin-top: 1rem;
+	border-bottom: 1px solid white;
+}
+#adopta-perruno .adop{
+	text-align: center;
+}
+#adopta-perruno img{
+	border: 1px solid white;
+	border-radius: 5px 5px 0 0;
+}
+#adopta-perruno .descripcion{
+	border-radius: 0 0 5px 5px ;
+	border: 1px solid white;
+	padding-bottom: 1.5rem;
+	background: #848523;
+	color: white;
+}
+#adopta-perruno p {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+#adopta-perruno span{
+	font-weight: bold;
+	border-bottom: 1px solid white;
+}
+#adopta-perruno .owl-nav{
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0;
+	font-size: 2rem;
+}
+#adopta-perruno .owl-prev,#adopta-perruno .owl-next{
+	margin: 0 2rem;
+}
+/*************************
+	MISION Y VISION
+**************************/
+#acordion #mision {
+	margin-bottom: 1rem;
+}
+#acordion a{
+	text-decoration: none;
+	display: block;
+	padding: .75rem 1.25rem;
+	color: white;
+}
+#acordion h4{
+	background: #365509;
+    border-radius: 4px 4px 4px 4px ;
+}
+#acordion a:hover{
+	text-decoration: none;
+}
+#mision-vision{
+	background: #B57E39;
+	color: white;
+}
+#mision-vision img{
+	width: 360px;
+	height: 450px;
+	margin-top: 2rem;
+}#mision-vision h2{
+	margin-bottom: 2rem;
+}
+#mision-vision #guau-bajada{
+	margin-bottom: 2rem;
+}
+/******************************
+		PRODUCTOS
+*******************************/
+#caracteristicas{
+	background: #4BC33B;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#caracteristicas h3{
+	padding-bottom: 1rem;
+}
+
